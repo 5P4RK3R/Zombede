@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://btnm4blu43ebd"]
+
+[ext_resource type="Script" path="res://Script/BG.gd" id="1_l744s"]
+[ext_resource type="Texture2D" uid="uid://cjkog0nyosv37" path="res://Sprites/Background.jpg" id="2_wiq27"]
+[ext_resource type="Texture2D" uid="uid://c65lg4cgrqgr6" path="res://Sprites/Ground.jpg" id="3_e3d7g"]
+[ext_resource type="Texture2D" uid="uid://dsitewlfjlbrx" path="res://Sprites/Sunny Land Trees Props Pack /Props PNG/wooden-house.png" id="4_putlr"]
+[ext_resource type="Texture2D" uid="uid://bmgp7i65rs8nc" path="res://Sprites/Sunny Land Trees Props Pack /Props PNG/straw-house.png" id="5_vhx81"]
+[ext_resource type="Texture2D" uid="uid://cbwe685krsylt" path="res://Sprites/Sunny Land Trees Props Pack /Props PNG/plant-house.png" id="6_ycgu4"]
+[ext_resource type="Texture2D" uid="uid://bp53rmkko77ab" path="res://Sprites/Sunny Land Trees Props Pack /Props PNG/rock-1.png" id="7_2fy50"]
+[ext_resource type="Texture2D" uid="uid://dqdkpqcuwfq0v" path="res://Sprites/Sunny Land Trees Props Pack /Props PNG/rock-2.png" id="8_nwit6"]
+[ext_resource type="Texture2D" uid="uid://dify32ssnwrfu" path="res://Sprites/Sunny Land Trees Props Pack /Props PNG/tree-house.png" id="9_8c8ea"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_l744s")
+
+[node name="Sky" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 2.08165e-12)
+
+[node name="BG" type="Sprite2D" parent="Sky"]
+position = Vector2(642, 358)
+texture = ExtResource("2_wiq27")
+
+[node name="Ground" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 2.08165e-12)
+
+[node name="BG" type="Sprite2D" parent="Ground"]
+position = Vector2(577, 590)
+scale = Vector2(2.52863, 0.384106)
+texture = ExtResource("3_e3d7g")
+
+[node name="Props" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 2.08165e-12)
+
+[node name="Wooden-house" type="Sprite2D" parent="Props"]
+position = Vector2(987, 491)
+texture = ExtResource("4_putlr")
+
+[node name="Straw-house" type="Sprite2D" parent="Props"]
+position = Vector2(533, 487)
+texture = ExtResource("5_vhx81")
+
+[node name="Plant-house" type="Sprite2D" parent="Props"]
+position = Vector2(61, 486)
+texture = ExtResource("6_ycgu4")
+
+[node name="Rock-1" type="Sprite2D" parent="Props"]
+position = Vector2(238, 516)
+texture = ExtResource("7_2fy50")
+
+[node name="Rock-2" type="Sprite2D" parent="Props"]
+position = Vector2(405, 515)
+texture = ExtResource("8_nwit6")
+
+[node name="Tree-house" type="Sprite2D" parent="Props"]
+position = Vector2(713, 462)
+texture = ExtResource("9_8c8ea")
