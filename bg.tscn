@@ -36,7 +36,7 @@ position = Vector2(987, 491)
 texture = ExtResource("4_putlr")
 
 [node name="Straw-house" type="Sprite2D" parent="Props"]
-position = Vector2(533, 487)
+position = Vector2(561, 486)
 texture = ExtResource("5_vhx81")
 
 [node name="Plant-house" type="Sprite2D" parent="Props"]
@@ -52,5 +52,5 @@ position = Vector2(405, 515)
 texture = ExtResource("8_nwit6")
 
 [node name="Tree-house" type="Sprite2D" parent="Props"]
-position = Vector2(713, 462)
+position = Vector2(749, 462)
 texture = ExtResource("9_8c8ea")

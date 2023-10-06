@@ -138,7 +138,7 @@ texture = ExtResource("1_htnph")
 sources/0 = SubResource("TileSetAtlasSource_1g5sm")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i4ddj"]
-size = Vector2(1153, 173.5)
+size = Vector2(1153, 178)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x8wwf"]
 size = Vector2(209.5, 647)
@@ -159,7 +159,7 @@ position = Vector2(521, 203)
 [node name="BG" type="StaticBody2D" parent="."]
 
 [node name="Ground Collision" type="CollisionShape2D" parent="BG"]
-position = Vector2(575.5, 560.25)
+position = Vector2(575.5, 558)
 shape = SubResource("RectangleShape2D_i4ddj")
 
 [node name="Init Wall Collision" type="CollisionShape2D" parent="BG"]
@@ -169,9 +169,3 @@ shape = SubResource("RectangleShape2D_x8wwf")
 [node name="Defer Wall Collision" type="CollisionShape2D" parent="BG"]
 position = Vector2(1257, 325)
 shape = SubResource("RectangleShape2D_lkbjx")
-
-[node name="Ground" type="Panel" parent="."]
-offset_left = 3.0
-offset_top = 473.0
-offset_right = 1154.0
-offset_bottom = 645.0
