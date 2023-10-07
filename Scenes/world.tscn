@@ -1,8 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://c7lcjr042ia8m"]
+[gd_scene load_steps=10 format=3 uid="uid://bfq5tq0b7foru"]
 
-[ext_resource type="PackedScene" uid="uid://dhsip1hrvp6p2" path="res://player.tscn" id="1_bpx6u"]
+[ext_resource type="PackedScene" uid="uid://dra8hw6sd7q84" path="res://player.tscn" id="1_bpx6u"]
 [ext_resource type="Texture2D" uid="uid://j8fwbmi7cd6j" path="res://Sprites/Sunny-land-assets-files/PNG/environment/layers/tileset.png" id="1_htnph"]
-[ext_resource type="PackedScene" uid="uid://bgjb2xabu2og" path="res://enemy.tscn" id="3_8gm7o"]
+[ext_resource type="PackedScene" uid="uid://bu4oil7f77vap" path="res://enemy.tscn" id="3_8gm7o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i4ddj"]
 size = Vector2(1153, 178)
@@ -187,12 +187,6 @@ position = Vector2(521, 203)
 
 [node name="Enemy" parent="." instance=ExtResource("3_8gm7o")]
 position = Vector2(1067, 209)
-
-[node name="Enemy2" parent="." instance=ExtResource("3_8gm7o")]
-position = Vector2(943, 357)
-
-[node name="Enemy3" parent="." instance=ExtResource("3_8gm7o")]
-position = Vector2(823, 332)
 
 [node name="UI" type="CanvasLayer" parent="."]
 
