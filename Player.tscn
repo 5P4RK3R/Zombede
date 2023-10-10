@@ -1,23 +1,63 @@
-[gd_scene load_steps=11 format=3 uid="uid://dhsip1hrvp6p2"]
+[gd_scene load_steps=22 format=3 uid="uid://dhsip1hrvp6p2"]
 
 [ext_resource type="Script" path="res://Script/player.gd" id="1_sig3l"]
-[ext_resource type="Texture2D" uid="uid://d3moo5yxpbemg" path="res://Sprites/Player 1/1.png" id="2_1mfha"]
-[ext_resource type="Texture2D" uid="uid://cwborm84f1s0p" path="res://Sprites/Player 1/8.png" id="4_g8bjm"]
-[ext_resource type="Texture2D" uid="uid://s1h1khc6af53" path="res://Sprites/Player 1/2.png" id="5_fa3y4"]
-[ext_resource type="Texture2D" uid="uid://bjhpb44opclhl" path="res://Sprites/Player 1/3.png" id="6_twf6d"]
-[ext_resource type="Texture2D" uid="uid://dk70xmo7ndd3c" path="res://Sprites/Player 1/4.png" id="7_omvak"]
-[ext_resource type="Texture2D" uid="uid://b2mbucd33katp" path="res://Sprites/Player 1/6.png" id="8_p74em"]
-[ext_resource type="Texture2D" uid="uid://bfu26rt76rfv8" path="res://Sprites/Player 1/7.png" id="9_fvcdq"]
+[ext_resource type="Texture2D" uid="uid://cboxwtnvdkjfx" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_HurtFlashing_1.png" id="2_ibjx5"]
+[ext_resource type="Texture2D" uid="uid://b12uges8ev5tg" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Hurt_1.png" id="3_icpki"]
+[ext_resource type="Texture2D" uid="uid://c0v8kyvhr6e3d" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Hurt_2.png" id="4_xxtdd"]
+[ext_resource type="Texture2D" uid="uid://c1y06y7lmnvkh" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Hurt_3.png" id="5_mkoi3"]
+[ext_resource type="Texture2D" uid="uid://cr6n4xwepym7k" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Hurt_4.png" id="6_go2sc"]
+[ext_resource type="Texture2D" uid="uid://8nu4c72icyb8" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Idle_1.png" id="7_jatp4"]
+[ext_resource type="Texture2D" uid="uid://v0k5cgke4p42" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Idle_2.png" id="8_kt7qj"]
+[ext_resource type="Texture2D" uid="uid://xhxi4jgb6ulo" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Idle_3.png" id="9_3vay3"]
+[ext_resource type="Texture2D" uid="uid://be5iqwjdq53er" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Idle_4.png" id="10_08qoa"]
+[ext_resource type="Texture2D" uid="uid://cwe27tlssaoa2" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Fall.png" id="11_otl5j"]
+[ext_resource type="Texture2D" uid="uid://dwjvu21gs75m8" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Walk_1.png" id="12_jdoy5"]
+[ext_resource type="Texture2D" uid="uid://c2yaokojfp3cs" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Walk_2.png" id="13_fjkod"]
+[ext_resource type="Texture2D" uid="uid://crl55bglgiuo7" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Walk_3.png" id="14_j0hs1"]
+[ext_resource type="Texture2D" uid="uid://cakegtl87jx2b" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Walk_4.png" id="15_qh7s3"]
+[ext_resource type="Texture2D" uid="uid://bfqfytt4ghsdc" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Walk_5.png" id="16_r5sos"]
+[ext_resource type="Texture2D" uid="uid://dcc2bl2no1qp6" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Walk_6.png" id="17_mv2ru"]
+[ext_resource type="Texture2D" uid="uid://cbhmul0y6dky3" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Walk_7.png" id="18_1hrut"]
+[ext_resource type="Texture2D" uid="uid://ch7wh06koig1y" path="res://Sprites/ForestGunner_by_RockyMullet_v1.0/Gunner/Gunner_Walk_8.png" id="19_t7ldk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mkehm"]
-radius = 34.0
-height = 206.0
+radius = 15.0
+height = 46.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ok8hc"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_1mfha")
+"texture": ExtResource("2_ibjx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_icpki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xxtdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mkoi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_go2sc")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_jatp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kt7qj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3vay3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_08qoa")
 }],
 "loop": true,
 "name": &"idle",
@@ -25,7 +65,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_g8bjm")
+"texture": ExtResource("11_otl5j")
 }],
 "loop": true,
 "name": &"jump",
@@ -33,19 +73,28 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_fa3y4")
+"texture": ExtResource("12_jdoy5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_twf6d")
+"texture": ExtResource("13_fjkod")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_omvak")
+"texture": ExtResource("14_j0hs1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_p74em")
+"texture": ExtResource("15_qh7s3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_fvcdq")
+"texture": ExtResource("16_r5sos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mv2ru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_1hrut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_t7ldk")
 }],
 "loop": true,
 "name": &"run",
@@ -59,10 +108,10 @@ script = ExtResource("1_sig3l")
 shape = SubResource("CapsuleShape2D_mkehm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0.624997, -2.5)
-scale = Vector2(1.02622, 0.97807)
+position = Vector2(1, -7)
+scale = Vector2(1.02622, 0.949973)
 sprite_frames = SubResource("SpriteFrames_ok8hc")
-animation = &"idle"
+animation = &"hurt"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.8, 1.8)
