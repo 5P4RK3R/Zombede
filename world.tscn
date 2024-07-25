@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://c7lcjr042ia8m"]
 
-[ext_resource type="PackedScene" uid="uid://dhsip1hrvp6p2" path="res://player.tscn" id="1_bpx6u"]
+[ext_resource type="PackedScene" uid="uid://dhsip1hrvp6p2" path="res://Player.tscn" id="1_bpx6u"]
 [ext_resource type="Texture2D" uid="uid://j8fwbmi7cd6j" path="res://Sprites/Sunny-land-assets-files/PNG/environment/layers/tileset.png" id="1_htnph"]
 [ext_resource type="PackedScene" uid="uid://bgjb2xabu2og" path="res://enemy.tscn" id="3_8gm7o"]
 
