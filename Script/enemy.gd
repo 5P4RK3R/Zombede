@@ -1,15 +1,15 @@
 extends CharacterBody2D
 
 
-const SPEED = 50.0
-const JUMP_VELOCITY = -400.0
-var player  
-var direction
-var player_position
-var chase = false
+const SPEED:float = 50.0
+const JUMP_VELOCITY:float = -400.0
+var player:Node
+var direction:Vector2
+var player_position:Vector2
+var chase:bool = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-@onready var anim = get_node("AnimatedSprite2D") # @onready helps to access variable on runtime
+var gravity:float = ProjectSettings.get_setting("physics/2d/default_gravity")
+@onready var anim:AnimatedSprite2D = $AnimatedSprite2D # @onready helps to access variable on runtime
 #func _ready():
 #	anim.play("idle")
 
@@ -24,7 +24,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 #		print("player")
 #		chase = false
 
-func _physics_process(delta):
+func _physics_process(delta:float) -> void:
 	velocity.y += gravity * delta 
 	# Get the player's position
 	if chase == true:
@@ -63,29 +63,29 @@ func _physics_process(delta):
 	#	velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	#
-func death():
+func death() -> void:
 	chase = false
 	self.queue_free()
 
-func _on_player_detection_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+func _on_player_detection_body_shape_entered(body_rid:RID, body:Node, body_shape_index:int, local_shape_index:int) -> void:
 	#print(body.name)
 	if body.name == "Player":
 		#print("player")
 		chase = true # Replace with function body.
 
 
-func _on_player_detection_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
+func _on_player_detection_body_shape_exited(body_rid:RID, body:Node, body_shape_index:int, local_shape_index:int) -> void:
 	if body.name == "Player":
 		#print("player")
 		chase = false # Replace with function body.
 
 
-func _on_player_death_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+func _on_player_death_body_shape_entered(body_rid:RID, body:Node, body_shape_index:int, local_shape_index:int) -> void:
 	if body.name == "Player": # Replace with function body.
 		death()
 
 
-func _on_player_collision_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+func _on_player_collision_body_shape_entered(body_rid:RID, body:Node, body_shape_index:int, local_shape_index:int) -> void:
 	if body.name == "Player":
 		body.health -= 5
 		death() # Replace with function body.
